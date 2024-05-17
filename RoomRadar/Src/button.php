@@ -89,6 +89,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btnLogout'])) {
         // Destroy the session and redirect to login page
         session_destroy();
+        session_unset();
         header("Location: Login.php");
         exit();
 }
