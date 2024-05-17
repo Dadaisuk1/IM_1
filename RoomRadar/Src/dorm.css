@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Montserrat';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/abstract.jpg);
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-image: url(img/abstract.jpg);
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 250px;
+}
+
+.container form .details {
+    margin-top: 10px;
+
+}
+
+.container form .title{
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container form .input {
+    display: flex;
+    width: calc(100% - 2);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+.container form input {
+    font-weight: 100;
+    height: 40px;
+}
+
+.input input  {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.input input:is(:focus, :valid) {
+    box-shadow: 0 3x 6px rgba(0, 0, 0, 0.13);
+}
+
+.input input[type = "number"] {
+    color: #707070;
+}
+
+.input input[type = "number"]:valid {
+    color: #333;
+}
+
+form img {
+    width: 16px;
+}
+
+.container form button, .backBttn, .submitBttn{
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 210px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.3s linear;
+    color: #000000;
+    cursor: pointer;
+}
+
+form button img {
+    margin: 0 6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.backBtn,
+.submitBtn {
+    display: flex;
+}
+
+.backBttn,
+.submitBttn {
+    flex: 1;
+}
+
+.backBttn img {
+    transform: scaleX(-1);
+}
+
+
+.submitBtn:hover,
+.backBtn:hover {
+    background-color: #a7a7a7;
+}
+

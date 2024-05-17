@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Montserrat';
+}
+
+body {
+    background-color: rgb(230, 236, 240);
+    font-family: Montserrat;
+    background-image: url(img/building\(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginbox {
+    width: 350px;
+    height: 420px;
+    background: rgba(252, 252, 252, 0.541);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+}   
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.loginbox .login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.loginbox a:hover {
+    color: #ffc107;
+}
+
+.bttn a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.bttn a:hover {
+    color: #ffc107;
+}
+
+.bttn {
+    width: 100px;
+    height: 100px;
+    background: rgba(252, 252, 252, 0.541);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-weight: 800;
+}
+
+form .backBttn .backBtn {
+    margin: 50px 65px 0;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    color: #000000;
+    cursor: pointer;
+    background-color: rgba(230, 236, 240, 0.696);
+}
+
+form button img {
+    margin: 0 6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.backBtn {
+    display: flex;
+}
+
+.backBttn {
+    flex: 1;
+}
+
+.backBttn img {
+    transform: scaleX(-1);
+}
+
+
+.backBtn:hover {
+    background-color: #fcfcfc;
+}
+
+/* Add your CSS styles here */
+table {
+    background-color: rgba(230, 236, 240, 0.34);
+    margin: 50px auto 0;
+    position: flex;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+  }
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #edecec;
+    text-align: center;
+    border-radius: 20px;
+}
+
+tr:first-child td {
+    border-top: none; /* Remove top border for first row */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Remove bottom border for last row */
+}
+
+td:first-child {
+    border-left: none; /* Remove left border for first column */
+}
+
+td:last-child {
+    border-right: none; /* Remove right border for last column */
+}
