@@ -7,6 +7,11 @@
         die("Failed to connect: " . $con->connect_error);
     }
 
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: login.php");
+        exit();
+    }
+
     // Check if the updateid parameter is set
     if (isset($_GET['updateid'])) {
         $dormID = $_GET['updateid'];
