@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(230, 236, 240);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-image: url(img/building\(1\).jpg);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_layout {
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(85, 85, 85, 0.500);
+    backdrop-filter: blur(3px);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+}
+
+.login_layout .head {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+
+.login_layout .container .input_username,
+.input_password {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.login_layout .container .button {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.login_layout .container .other_button {
+    width: 70%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.login_layout .container .other_button a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.login_layout input {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.login_layout label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.login_layout input[type="text"],
+input[type="password"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.login_layout button {
+    cursor: pointer;
+    height: 40px;
+    width: 275px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffff;
+    background-color: #0090EC;
+}
+
+.input_password {
+    position: relative;
+    flex-direction: column;;
+}
+
+.pass_icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 34.5%;
+    color: #009dff;
+    font-size: 20px;
+}
+
+/* Hover */
+
+.button button[type="submit"]:hover {
+    color: #0090EC;
+    background-color: #ffffff;
+}
+
+.login_layout .other_button a:hover {
+    color: #009dff;
+}
